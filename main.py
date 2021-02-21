@@ -10,8 +10,12 @@ income = (
     + taxable_interest
     + (dividends - qualified_dividends)
     - ira_deduction
-    - student_loan_interest
+    - student_lsoan_interest
 )
+
+
+
+
 import sys, os
 
 if x == 4:
