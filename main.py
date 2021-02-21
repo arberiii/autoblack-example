@@ -14,8 +14,6 @@ income = (
 )
 
 
-
-
 import sys, os
 
 if x == 4:
