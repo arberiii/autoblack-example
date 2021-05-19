@@ -1,5 +1,108 @@
 {
+  "name": "xoxo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "eslint:github-action": "eslint ."
+    "build-dev": "webpack --mode none",
+  },
+  "engines": {
+    "node": "^14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/react": "^11.0.2",
+    "@types/jest": "^26.0.13",
+    "babel-jest": "^26.3.0",
+    "codecov": "^3.7.2",
+    "eslint": "^7.8.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "prettier": "^2.1.1",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@apollo/react-testing": "^4.0.0",
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-transform-runtime": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/runtime": "^7.9.2",
+    "@stripe/react-stripe-js": "^1.1.2",
+    "@stripe/stripe-js": "^1.11.0",
+    "@types/jquery": "^3.5.1",
+    "apollo-boost": "^0.4.7",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "currency.js": "^2.0.3",
+    "flatfile-csv-importer": "^0.2.9",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "moment": "^2.24.0",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "node-sass": "^4.14",
+    "popper.js": "^1.16.1",
+    "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-bootstrap": "^1.0.1",
+    "react-bootstrap-typeahead": "^5.1.1",
+    "react-csv": "^2.0.3",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "unfetch": "^4.2.0",
+    "waait": "^1.0.5",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-manifest-plugin": "^2.2.0"
+  },
+  "jest": {
+    "clearMocks": true,
+    "collectCoverage": true,
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy"
+    },
+    "modulePaths": [
+      "<rootDir>/src",
+      "<rootDir>"
+    ],
+    "rootDir": "frontend",
+    "roots": [
+      "<rootDir>"
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "jest": true,
+      "es6": true
+    },
+    "plugins": [
+      "import"
+    ],
+    "extends": [
+      "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "rules": {
+      "no-console": "warn",
+      "no-eval": "error",
+      "import/first": "error"
+    }
   }
 }
