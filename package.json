@@ -1,1 +1,5 @@
-{}
+{
+  "scripts": {
+    "eslint:github-action": "eslint ."
+  }
+}
